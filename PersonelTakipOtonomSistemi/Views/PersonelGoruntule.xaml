@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonelTakipOtonomSistemi.Views.PersonelGoruntule"
+             Title="Personel Görüntüle"
+             Loaded="ContentPage_Loaded">
+    <Grid>
+        <Image Source="goruntule.jpeg" HeightRequest="2000"/>
+        <Image Source="personelgoruntule.png" HeightRequest="1800"/>
+
+        <CollectionView
+            x:Name="collectionViewPersonel"
+            HeightRequest="600">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout  HorizontalOptions="Center" Padding="470,0" Spacing="0" >
+                        <HorizontalStackLayout>
+                            <Label Text="Personel ID:" FontAttributes="Bold" TextColor="DarkGoldenrod" FontSize="35"  FontFamily="Cambria"/>
+                            <Label FontSize="35" Text="{Binding PersonelID}" TextColor="Bisque"  FontAttributes="Bold" FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Adı: " TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria" FontAttributes="Italic"/>
+
+                            <Label FontSize="25" Text="{Binding Ad}" TextColor="White"  FontFamily="Cambria" />
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Soyad:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria" FontAttributes="Italic"/>
+                            <Label FontSize="25" Text="{Binding Soyad}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Maas:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria" FontAttributes="Italic"/>
+                            <Label FontSize="25" Text="{Binding Maas}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Doğum Tarihi:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding DogumTarihi}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="TC Kimlik No:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding TCKimlikNo}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Telefon No:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding TelefonNo}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="İşe Başlama Tarihi:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding IseBaslamaTarihi}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Departman:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding Departman}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Pozisyon:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding Pozisyon}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Eposta:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding Eposta}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sifre:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding Sifre}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Çalışma Durumu:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding aktifMi}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Yıllık İzin Hakkı:" TextColor="CadetBlue" FontSize="25"  FontFamily="Cambria"/>
+                            <Label FontSize="25" Text="{Binding yıllıkİzinHakkı}" TextColor="White"  FontFamily="Cambria"/>
+                        </HorizontalStackLayout>
+                        <Label />
+                        <Label />
+                        <Label />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

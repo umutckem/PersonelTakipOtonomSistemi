@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PersonelTakipOtonomSistemi.Dtos"
+             x:Class="PersonelTakipOtonomSistemi.Views.YoneticiMenu"
+             Title="YoneticiMenu">
+
+
+
+
+    <Grid>
+        <Image Source="ytnpanel2.png" Aspect="AspectFill" HeightRequest="900"/>
+        <HorizontalStackLayout Margin="30,0" Spacing="10" VerticalOptions="Start" HorizontalOptions="Start">
+            <Label Text="       Hoş geldiniz" VerticalOptions="Start"/>
+            <Label Text="UTCNN" VerticalOptions="Start" TextTransform="Uppercase" FontAttributes="Bold"/>
+            <Label Text="Yöneticisi"></Label>
+        </HorizontalStackLayout>
+        <VerticalStackLayout Padding="20" VerticalOptions="Start" HorizontalOptions="Fill">
+            <Frame 
+                HorizontalOptions="Start"
+                BorderColor="AntiqueWhite"
+                 WidthRequest="300"/>
+        </VerticalStackLayout>
+
+
+
+
+        <HorizontalStackLayout>
+            <Frame Scale="20" BorderColor="Brown"></Frame>
+        </HorizontalStackLayout>
+
+        <Label Text="Personel Düzenleme Ekranı" VerticalOptions="Start" HorizontalOptions="Start" Margin="530,30" FontSize="45" FontFamily="Freestyle Script" TextColor="Yellow"/>
+
+        <VerticalStackLayout VerticalOptions="Start">
+            <Frame WidthRequest="1200" Margin="0,0" VerticalOptions="End" HorizontalOptions="End" />
+        </VerticalStackLayout>
+
+
+
+        <HorizontalStackLayout >
+
+            <VerticalStackLayout Margin="500,100" Spacing="20">
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="Ad" x:Name="Ad" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9" PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="Soyad" x:Name="Soyad" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="DogumTarihi" x:Name="DogumTarihi" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="TelefonNo" x:Name="TelefonNo" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="IseBaslamaTarihi" x:Name="IseBaslamaTarihi" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="Maas" x:Name="Maas" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"   BackgroundColor="MediumAquamarine" Placeholder="Yıllık İzin Hakkı" x:Name="izinHakki" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout Margin="0,100" Spacing="20">
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="Personel Id" x:Name="PersonelId" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="TcNo" x:Name="TcNo" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="Depertman" x:Name="Depertman" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="Pozisyon" x:Name="Pozisyon" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="Eposta" x:Name="Eposta" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="Sifre" x:Name="Sifre" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+                <Entry  WidthRequest="200"  BackgroundColor="MediumAquamarine" Placeholder="Çalışma Durumu" x:Name="aktif" TextColor="Black" FontFamily="Lucida Console" Opacity="0.9"  PlaceholderColor="Black"/>
+
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+
+
+
+        <VerticalStackLayout Margin="0,20" HorizontalOptions="Start" VerticalOptions="Start">
+
+            <HorizontalStackLayout Margin="30,0">
+                <Image Source="user4.png" HeightRequest="45" ></Image>
+                <Button
+                VerticalOptions="Start" Margin="15,40" Opacity="0.9" BackgroundColor="Aqua" Text="   Personel Görüntüle     ." HorizontalOptions="Start" FontFamily="Bahnschrift SemiCondensed" FontAttributes="Bold" Clicked="Button_Clicked"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="30,0">
+                <Image Source="userekle.png" HeightRequest="45" ></Image>
+                <Button
+                VerticalOptions="Start" Margin="15,40" Opacity="0.9" BackgroundColor="Aqua" Text="   Personel Ekle                ." HorizontalOptions="Start" FontFamily="Bahnschrift SemiCondensed" FontAttributes="Bold" Clicked="Button_Clicked_1"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="30,0">
+                <Image Source="guncelle2.png" HeightRequest="45" ></Image>
+                <Button
+                VerticalOptions="Start" Margin="15,40" Opacity="0.9" BackgroundColor="Aqua" Text="   Personel Güncelle       ." HorizontalOptions="Start" FontFamily="Bahnschrift SemiCondensed" FontAttributes="Bold" Clicked="Button_Clicked_2"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="30,0">
+                <Image Source="delete.png" HeightRequest="45" ></Image>
+                <Button
+                VerticalOptions="Start" Margin="15,40" Opacity="0.9" BackgroundColor="Aqua" Text="   Personel Sil                  ." HorizontalOptions="Start" FontFamily="Bahnschrift SemiCondensed" FontAttributes="Bold" Clicked="Button_Clicked_3"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Margin="30,0">
+                <Image Source="aramacubugu2.png" HeightRequest="45" />
+                <Button VerticalOptions="Start" Margin="15,40" Opacity="0.9" BackgroundColor="Aqua" Text="   Personel Ara                ." HorizontalOptions="Start" FontFamily="Bahnschrift SemiCondensed" FontAttributes="Bold" Clicked="Button_Clicked_4"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+
+    </Grid>
+</ContentPage>

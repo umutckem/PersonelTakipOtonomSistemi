@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonelTakipOtonomSistemi.Views.PersonelMenu"
+             Title="PersonelMenu">
+
+    <Grid>
+        <Image Source="personelmenu.png" Aspect="AspectFill" HeightRequest="950"/>
+        <Label Text="Bilgilerim" HorizontalOptions="End" Margin="580,0"
+               FontFamily="Georgia"
+               TextColor="DarkBlue"    
+               FontAttributes="Bold"
+               FontSize="35"
+               VerticalOptions="Start"/>
+        <Frame HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="1050" Margin="360,40,0,0"/>
+        <Frame VerticalOptions="End" HorizontalOptions="End" WidthRequest="1200" Margin="0,170"/>
+        <Frame VerticalOptions="End" HorizontalOptions="Start" WidthRequest="170" Margin="490,230,0,0"/>
+        <Entry VerticalOptions="End" HorizontalOptions="Start" Margin="510,100" Placeholder="Eski Şifre" x:Name="eskiSifre" IsPassword="True" PlaceholderColor="Black" FontAttributes="Italic"/>
+        <Label
+            Text="Eski Sifre:"
+            FontFamily="DejaVu Serif"
+            Margin="400,110"
+            TextColor="Wheat"
+            FontSize="20"
+            VerticalOptions="End"
+            HorizontalOptions="Start"/>
+
+        <Label
+            Text="Yeni Şifre:"
+            FontFamily="DejaVu Serif"
+            Margin="700,110"
+            TextColor="Wheat"
+            FontSize="20"
+            VerticalOptions="End"
+            HorizontalOptions="End"/>
+        <Entry VerticalOptions="End" HorizontalOptions="End" Margin="600,100" Placeholder="Yeni Şifre" x:Name="yeniSifre" IsPassword="True" PlaceholderColor="Black" FontAttributes="Italic"/>
+
+        <Label
+            Text="Tekrardan Yeni Şifre:"
+            FontFamily="DejaVu Serif"
+            Margin="350,110"
+            TextColor="Wheat"
+            FontSize="20"
+            VerticalOptions="End"
+            HorizontalOptions="End"/>
+        <Entry VerticalOptions="End" HorizontalOptions="End" Margin="190,100" Placeholder="Tekrardan Yeni Şifre" x:Name="tekrardanYeniSifre" IsPassword="True" PlaceholderColor="Black" FontAttributes="Italic"/>
+
+
+        <VerticalStackLayout Margin="150,50" Spacing="12" Scale="1.005" VerticalOptions="Start" HorizontalOptions="End">
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="Soyadı:" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="Soyad"
+                       FontFamily="Lucida Console"
+                       Placeholder="Soyad"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                       TextColor="Yellow"
+                       HorizontalOptions="End"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="Dogum Tarihi:" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="DogumTarihi"
+                       FontFamily="Lucida Console"
+                       Placeholder="DogumTarihi"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="Ise Baslama Tarihi :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="IseBaslamaTarihi"
+                      Placeholder="IseBaslamaTarihi"
+                      BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                      HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+
+
+
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="Telefon Numara:" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="TelefonNo"
+                      Placeholder="TelefonNo"
+                      BackgroundColor="Transparent"
+                        PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                      HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="Pozisyon:" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="Pozisyon"
+                      Placeholder="Pozisyon"
+                      BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                      HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label Text="ÇalışmaDurumu:" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="aktif"
+                      Placeholder="ÇalışmaDurumu"
+                      BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                      HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout Margin="400,50" Spacing="12" Scale="1.005" VerticalOptions="Start" HorizontalOptions="Start">
+            <HorizontalStackLayout>
+                <Label Text="Personel Adı :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+
+                <Entry x:Name="Ad"
+                       Placeholder="Kullanıcı Adı"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="TCNO :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="TcNo"
+                       Placeholder="TcNo"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="E-posta :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="Eposta"
+                       Placeholder="Eposta"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Depertman :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="Depertman"
+                       Placeholder="Depertman"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="Maas :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="maas"
+                       Placeholder="Maas"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="İzin Hakkı :" VerticalOptions="Center" TextColor="AntiqueWhite" FontAttributes="Bold"/>
+                <Entry x:Name="izin"
+                       Placeholder="izin"
+                       BackgroundColor="Transparent"
+                       PlaceholderColor="LightBlue"
+                   TextColor="Yellow"
+                       HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+
+
+
+        </VerticalStackLayout>
+        <VerticalStackLayout HorizontalOptions="Start" VerticalOptions="Start">
+            <Label Margin="35,0"
+                   HorizontalOptions="Start"
+                   TextColor="Bisque"
+                   FontFamily="Monotype Corsiva"
+                   FontSize="20"
+                   Text="Sisteme Hoş Geldiniz"/>
+            <Frame
+                HorizontalOptions="Start"
+                WidthRequest="230"/>
+        </VerticalStackLayout>
+
+        <Button x:Name="getir"
+                Margin="15,192"
+                WidthRequest="200"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Arial Black"
+                BackgroundColor="DarkTurquoise"
+                TextColor="Black"
+                Text="Bilgilerimi Getir"
+                Clicked="getir_Clicked" />
+        <Button x:Name="SıfreDegıstır"
+                Margin="15,243"
+                WidthRequest="200"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Clicked="SifreDegistir_Clicked"
+                TextColor="Coral"
+                Text="Şifre Değiştir"
+                FontAttributes="Bold"
+                BackgroundColor="Bisque"
+                FontFamily="Arial Black"/>
+        <Button x:Name="talepEt"
+                Clicked="talepEt_Clicked"
+                Margin="15,295"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                TextColor="LightPink"
+                Text="İzin Talep Et"
+                WidthRequest="200"
+                FontAttributes="Bold"
+                BackgroundColor="Teal"
+                FontFamily="Arial Black"/>
+        <Button x:Name="aktifOl"
+                Clicked="aktifOl_Clicked"
+                Margin="15,0"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                TextColor="White"
+                Text="İzinden Dönüş"
+                WidthRequest="200"
+                FontAttributes="Bold"
+                BackgroundColor="Teal"
+                FontFamily="Arial Black"/>
+        <Button 
+                Clicked="Button_Clicked"
+                Margin="15,20"
+                WidthRequest="200"
+                HorizontalOptions="Start"
+                VerticalOptions="End"
+                TextColor="White"
+                Text="İşten Ayrıl"
+                FontAttributes="Bold"
+                BackgroundColor="Teal"
+                FontFamily="Arial Black"/>
+        <Label Text="İstenilen İzin Günü Sayısı :" VerticalOptions="End" HorizontalOptions="End" Margin="300,200" FontSize="18" TextColor="LightGoldenrodYellow" FontAttributes="Italic"/>
+        <Entry Placeholder="Gun Miktari" PlaceholderColor="Black" BackgroundColor="Transparent" VerticalOptions="End" HorizontalOptions="End" Margin="200,190" x:Name="istenilenMiktar"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonelTakipOtonomSistemi.Views.YoneticiLogin"
+             Title="YoneticiLogin">
+    <Grid>
+        <Image Source="yoneticilogin1.jpg" Aspect="AspectFill" HeightRequest="900"/>
+        <VerticalStackLayout Margin="50">
+            <Label Text="Giris Yapınız" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Bold" FontFamily="Lucida Handwriting" Margin="40" FontSize="26" />
+            <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="email.png" Aspect="AspectFill" HeightRequest="55"/>
+                <Frame Opacity="0.6"/>
+                <Entry
+                    x:Name="kullanıcıAdı"
+                    WidthRequest="250"
+                    Placeholder="                    Tc Numarası                     "
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="key.png" Aspect="AspectFill" HeightRequest="55"/>
+                <Frame Opacity="0.6"/>
+                <Entry
+                    x:Name="sifre"
+                    WidthRequest="250"
+                    Placeholder="                       Password                       "
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    IsPassword="True"
+                    />
+            </HorizontalStackLayout>
+            <VerticalStackLayout Padding="35">
+                <Button
+                    
+                Clicked="Button_Clicked"
+                Text="LOGİN"
+                    WidthRequest="120"
+                    Scale="1.1"
+                    Margin="580,0"
+                    FontFamily="Verdana"
+                VerticalOptions="Center"
+                HorizontalOptions="End"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

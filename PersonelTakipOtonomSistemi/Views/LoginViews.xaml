@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonelTakipOtonomSistemi.Views.LoginViews"
+             Title="LoginViews">
+
+    <Grid RowDefinitions="3*,.7*" >
+        <Image Aspect="AspectFill" Source="personel.png" HeightRequest="900" />
+
+
+        <StackLayout >
+
+            <Label Text="Giris Yapınız" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#2D2D2D" FontAttributes="Bold" FontFamily="Lucida Handwriting" Margin="40" FontSize="26" />
+
+
+            
+
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25" Padding="10" >
+                
+                
+                <Image Aspect="AspectFill" Source="email.png" HeightRequest="55" />
+                <Frame Opacity="0.5" BackgroundColor="Purple"/>
+                
+                <Entry 
+                     x:Name="tcNo"
+                     BackgroundColor="SeaShell"
+                     PlaceholderColor="Black"
+                     Grid.Column="1"
+                     WidthRequest="250"
+                     Placeholder="                  TC Numarası                       "
+                     TextColor="Black"
+                     Opacity="0.7"
+                     ClearButtonVisibility="WhileEditing" />
+                
+                
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25" Padding="10">
+
+                <Image Aspect="AspectFill" Source="key.png" HeightRequest="55"/>
+                <Frame Opacity="0.5"  BackgroundColor="Purple"/>
+
+                <Entry 
+                    x:Name="sifre"
+                    WidthRequest="250"
+                    Placeholder="                       Password                       "
+                    BackgroundColor="SeaShell"
+                    Opacity="0.7"
+                    Grid.Column="1"
+                    TextColor="Black"
+                    PlaceholderColor="Black"
+                    ClearButtonVisibility="WhileEditing"
+                    IsPassword="True" />
+            </HorizontalStackLayout>
+
+            <Button Text="GIRIS"  TextColor="Black" Background="MediumPurple" Clicked="Button_Clicked" VerticalOptions="End" HorizontalOptions="End" Margin="650,15" WidthRequest="150" FontAttributes="Italic" FontFamily="Verdana" Scale="1.1"/>
+            <Button Text="SIFRE UNUTTUM" Background="NavajoWhite" Clicked="Button_Clicked_1" VerticalOptions="End" HorizontalOptions="End" Margin="650,0" WidthRequest="150" FontAttributes="Italic" TextColor="Black" FontFamily="Verdana" Scale="1.1"/>
+
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>
